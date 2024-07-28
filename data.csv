@@ -1,0 +1,11 @@
+order_id,customer_id,order_date,product_id,product_name,product_price,quantity
+1,1,2023-01-01,101,Product A,100,1
+2,2,2023-01-15,102,Product B,150,2
+3,1,2023-02-01,101,Product A,100,1
+4,3,2023-02-14,103,Product C,200,3
+5,4,2023-03-01,104,Product D,250,1
+6,2,2023-03-15,102,Product B,150,2
+7,5,2023-04-01,105,Product E,300,1
+8,3,2023-04-14,103,Product C,200,3
+9,1,2023-05-01,101,Product A,100,1
+10,4,2023-05-15,104,Product D,250,2
