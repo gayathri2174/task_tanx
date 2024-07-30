@@ -10,13 +10,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app.main import compute_monthly_revenue, compute_product_revenue, compute_customer_revenue, top_customers_by_revenue
 
 class TestMain(unittest.TestCase):
-    """Test suite for the functions in the app.main module."""
+    # Test suite for the functions in the app.main module
 
     def setUp(self):
-        """
-        Set up test data for the test cases.
-        Creates a sample DataFrame to be used in tests.
-        """
+        # Set up test data for the test cases.Creates a sample DataFrame to be used in tests
         data = {
             'order_id': [1, 2, 3],
             'customer_id': [1, 2, 1],
@@ -29,10 +26,8 @@ class TestMain(unittest.TestCase):
         self.df = pd.DataFrame(data)
 
     def test_compute_monthly_revenue(self):
-        """
-        Test the compute_monthly_revenue function.
-        Checks if the monthly revenue is calculated correctly.
-        """
+        # Test the compute_monthly_revenue function.Checks if the monthly revenue is calculated correctly
+        
         result = compute_monthly_revenue(self.df)
         # Verify January revenue
         self.assertEqual(result.iloc[0]['Total Revenue'], 250)
